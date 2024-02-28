@@ -51,3 +51,68 @@ greet4= '''hello world'''
 print(greet1)
 
 
+info1={
+  "firstName":"subhuti",
+  "lastName":"kapse",
+  "rollno":11163,
+  "age":21
+}
+
+# print(info1['firstName'])
+# print(info1.get('firstName'))
+# q1=info1.setdefault('city',"pune")
+# print(q1)
+# print(info1)
+
+#
+x=112
+print(x)
+
+firstName="subhuti",
+print(type(firstName))
+
+
+lastName='kapse'
+print(type(lastName))
+
+middleName="""
+shyli
+"""
+
+info2='''
+I am learning
+python'''
+print(print(info2))
+
+#program 2
+city="pune"
+print(city[0])
+print(city[1])
+
+#program 3
+city1="maharashtra"
+e=city1[5::]
+print(e)
+e1=city1[-5::]
+print(e1)
+e2=city1[1:7:]
+print(e2)
+e3=city1[::-1]
+print(e3)
+e4=city1[-1:-4]
+print(e4)
+
+#program 4
+city="mumbai"
+q1=city.upper()
+print(q1)
+
+#program 5
+city="mumbai"
+q2=city.lower()
+print(q2)
+
+#program 6
+city="mumbai"
+q3=city.count('m')
+print(q3)

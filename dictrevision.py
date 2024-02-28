@@ -81,3 +81,7 @@ for k,v in info3.items():
 print(info3['firstName'])
 for x in info3:
     print(x,info3[x])    
+
+
+
+    

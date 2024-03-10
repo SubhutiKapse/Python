@@ -116,3 +116,5 @@ print(q2)
 city="mumbai"
 q3=city.count('m')
 print(q3)
+
+

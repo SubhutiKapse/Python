@@ -28,3 +28,34 @@ print(e)
 names=["subhuti","sapeksha","shimli","shyli"]
 r1=["Mr/Mrs" + x for x in names if len(x)>5]
 print(r1)
+
+#list comprehension
+lst=[1985,1986,1987,1988,1999]
+agesA=[]
+for x in lst:
+    ages.append(2024-x)
+    print(ages)
+
+r1=[2024 - x for x in lst]
+print(r1)
+
+number=[5,6,7,8,9,10]
+num=[]
+for x in number:
+    num.append(20-x)
+    print(x)
+
+r2=[20- x for x in number]
+print(r2)
+
+numbersA=[1,2,3,4,5,6,7,8,9,10]
+r3=[x*x for x in numbersA]
+print(r3)
+
+numbersB=[1,2,3,4,5,6,7,8,9,10]
+r4=[x for x in numbersB if x%2==0]
+print(r4)
+
+r5=["even" if x %2==0 else "odd" for x in numbersB]
+print(r5)
+

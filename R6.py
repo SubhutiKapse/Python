@@ -15,7 +15,7 @@ infoB = {
 # retrive 
 print(infoB["firstName"])
 #update
-infoB["firstName"]= "tanmay"
+infoB["firstName"]= "sapeksha"
 print(infoB)
 # add 
 infoB['city'] = "pune"
@@ -360,7 +360,7 @@ print(info3)
 print(info2)
  
 
- info4 = {
+info4 = {
     "firstName":"chinmay",
     "lastName":"deshpande",
     "rollNo":23
@@ -425,7 +425,7 @@ info6 = {
 
 # info7 = info6.copy()
 # print(info7)
-# info7['firstName'] = "amit"
+# info7['firstName'] = "veena"
 # print(info7)
 # print(info6)
 
@@ -435,3 +435,112 @@ info6 = {
 info6.setdefault('language',"marathi")
 print(info6)
 print(info6)
+
+
+# names = ["subhuti","sapi","sanu","sanvi"]
+# print(names)
+# # retrive 
+# print(names[0])
+# # add 
+# names.append("sayli")
+# names.insert(2,"hello")
+# #update 
+# names[0] = "shamli"
+# # delete
+# names.pop()
+# names.pop(1)
+# names.remove("subhuti")
+
+#          0            1     2   3
+info = ["subhuti","kapse",22,66]
+print(info)
+info = {
+    "firstName":"subhuti",
+    "lastName":"kapse",
+    "age":22,
+    "rollNo":66
+}
+print(info)
+print(type(info))
+
+info = {
+    "firstName":"subhuti",
+    "lastName":"kapse",
+    "age":21,
+    "rollNo":66,
+    "lastName":"singh"
+}
+# retrive 
+print(info['firstName'])
+print(info['lastName'])
+# update
+info['firstName'] = "sapeksha"
+print(info)
+# does dictionary stores duplicate key-value / property-value?
+#no
+
+# how to find specfic key/ property exist in dictionary
+print("age" in info)
+print("city" in info)
+# add the property
+info['city'] = "pune"
+print(info)
+
+
+# how to loop over dictionary 
+vehicle = {
+    "color":"black",
+    "type":"bmw",
+    "regNo":123
+}
+print(vehicle)
+for key in vehicle:
+    print(key,vehicle[key])
+
+
+for prop in vehicle:
+    print(prop,vehicle[prop])
+
+# how to find total number of properties in dictionary
+q2 = len(vehicle)
+print(q2)
+
+
+
+info6 = {
+    "firstName":"subhuti",
+    "lastName":"kapse",
+    "age":23,
+    "rollNo":34
+}
+#e = info6.get("rollNo")
+#info6.clear()
+#info6.update({"city":"pune"})
+#info6.popitem()
+#info6.pop("age")
+# for k in  info6.keys():
+#     print(k)
+
+# for v in  info6.values():
+#     print(v)
+
+# for item in  info6.items():
+#     print(item)
+
+# info7 = info6.copy()
+# print(info7)
+# info7['firstName'] = "sapeksha"
+# print(info7)
+# print(info6)
+
+# e = dict.fromkeys(["color","type","model"])
+# print(e)
+
+info6.setdefault('language',"marathi")
+print(info6)
+print(info6)
+
+
+
+
+#print(info6)

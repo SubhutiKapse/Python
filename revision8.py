@@ -147,47 +147,102 @@
 # #     print(s1)
 # #     s1=s1+2
   
-#list
-names=["subhuti","sapeksha","shivani","shyli"]
-print(names)
-print(type(names))
-print(len(names))
+# #list
+# names=["subhuti","sapeksha","shivani","shyli"]
+# print(names)
+# print(type(names))
+# print(len(names))
 
-names[0]
-print(names)
-names[1]
-print(names)
-names[2]
-print(names)
-names[3]
-print(names)
+# names[0]
+# print(names)
+# names[1]
+# print(names)
+# names[2]
+# print(names)
+# names[3]
+# print(names)
 
-names[0]="kamla"
-print(names)
-names[1]="shamli"
-print(names)
-for x in range(len(names)):
- print(x)
+# names[0]="kamla"
+# print(names)
+# names[1]="shamli"
+# print(names)
+# for x in range(len(names)):
+#  print(x)
 
-for  item in names:
- print(item) 
+# for  item in names:
+#  print(item) 
 
-q1=0
-while(q1<len(names)):
- print(q1)
- print(names[q1])
- q1=q1+1 
+# q1=0
+# while(q1<len(names)):
+#  print(q1)
+# #  print(names[q1])
+# #  q1=q1+1 
 
-flowers=["rose","mogra","jasmine","tulip","lily"]
-print(flowers)
-print(type(flowers))
-print(len(flowers))
-print("lily" in flowers)
+# # flowers=["rose","mogra","jasmine","tulip","lily"]
+# # print(flowers)
+# # print(type(flowers))
+# # print(len(flowers))
+# # print("lily" in flowers)
 
-a1=1
-while(a1<=5):
- if a1==3:
-  a1=a1+1
-  print(a1)
+# # a1=1
+# # while(a1<=5):
+# #  if a1==3:
+# #   a1=a1+1
+# #   print(a1)
 
-  
+# #function without parameters and without returntype
+# def addA():
+#  print(2+3)
+# addA()
+# addA() 
+
+# #function with parameters and without returntype
+
+# def addB(x,y):
+#  print(x+y)
+# addB(2,4) 
+
+# #function with parameters and with returntype
+# def addC(x,y):
+#  return x+y
+# q1=addC(12,3)
+# print(q1)
+
+
+# #conditional statement
+# num=10
+# if (num<=20 and num<=30):
+#  print("10 % discount")
+# if (num<=20 and num<=30):
+#  print("20 % discount")
+# if (num<=20 and num<=30):
+#  print("30 % discount")
+
+
+#  numT=20
+# if (num<=20 and num<=30):
+#  print("10 % discount")
+# elif (num<=20 and num<=30):
+#  print("20 % discount")
+# elif (num<=20 and num<=30):
+#  print("30 % discount")
+# # else:
+# #  print("no discount")
+
+
+#int as parameter and int as returntype
+def add(x,y):
+ return x+y
+q1=add(1,3)
+print(q1)
+
+#float as parameter and float as returntype
+
+#string as parameter and string as returntype
+#boolean as parameter and boolean as returntype
+#list as parameter and list as returntype
+
+#tuple as parameter and tuple as returntype
+
+#dictionary as parameter and dictionary as returntype
+#set as parameter and set as returntype

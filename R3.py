@@ -1,4 +1,5 @@
-# # #loops
+# # #loops-repeating something over and over again until perticular condition is satisfied
+#loops is used to control the repeatition
 
 # # #for loop
 
@@ -20,7 +21,8 @@
 
 
 # # #program 4
-# # for x in range(1,6,2):
+# # for x in range(1,6,2):1 se start hoga aur 5 tk jaega 6 include nhi hoga aur 2 value skip karte hue
+#1,4 print karega
 # #     print(x)
 # # # #program 5
 # # for x in range(0,10,2):
@@ -240,3 +242,17 @@ for x in range(1,6):
 
 
 
+#break with while
+i1=0
+while(i1<=5):
+ if i1==3:
+    break
+print(i1)
+i1=i1+1
+#continue with while
+i2=0
+while(i2<=7):
+    if i2==4:
+     continue
+print(i2)
+i2=i2+1

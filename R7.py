@@ -79,6 +79,125 @@ while(i1 < len(animals)):
     i1 = i1 + 1
 
 
+# string methods 
+firstName = "subhuti"
+print(type(firstName))
+
+e1 = firstName.upper()
+print(e1)
+
+lastName = "kapse"
+e2 = lastName.lower()
+print(e2)
+
+middleName = "kamlesh"
+e3 = middleName.capitalize()
+print(e3)
+
+# upper() , lower() , capitalize()
+
+# program 2
+
+firstName = "subhuti"
+e4 = firstName.startswith("s")
+e5 = firstName.startswith('su')
+print(e4)
+print(e5)
+
+e6 = firstName.endswith('i')
+e7 = firstName.endswith('ti')
+print(e6)
+print(e7)
+
+# program 3
+firstName = " subhuti "
+print(len(firstName))
+
+# e5 = firstName.strip()
+# print(len(e5))
+
+# e6 = firstName.lstrip()
+# print(len(e6))
+
+# e7 = firstName.rstrip()
+# print(len(e7))
+
+# program 4
+str = "123213123123"
+e8 = str.isdigit()
+print(e8)
+
+#isnum()
+
+str2 = "amol"
+e9 = str2.isalpha()
+print(e9)
+
+str3 = "mayur123"
+print(str3.isalnum())
+
+
+str3 = "123"
+print(str3.isalnum())
+
+str3 = "aaaa"
+print(str3.isalnum())
+
+str3 = "aaaa #"
+print(str3.isalnum())
+
+
+#program 5
+str = "i am learning python"
+e10 = str.replace("python","js")
+print(e10)
+
+
+str2  = "Hello"
+e2 = str2.islower()
+print(e2)
+
+
+str3 = "HELLO"
+e4 = str3.isupper()
+print(e4)
+
+
+str4 = "chinmaya"
+e3 = str4.count('a')
+print(e3)
+
+str5 = "I Learn Python"
+e4 = str5.istitle()
+print(e4)
+
+str6 = "I Am Learning  Python"
+e5 = str6.swapcase()
+print(e5)
+
+#rjust()
+#ljust()
+
+# isspace()
+str7 = " "
+e8 = str7.isspace()
+print(e8)
+
+# varaibles -----> types ---- comparison ---- logical 
+# conditional statements ----> loops ----- list 
+# dictionary   strings  ----- tuple ----- set
+
+
+#7:30pm
+
+a = 10
+print(a)
+a = "hello"
+print(a)
+
+#int a = 124
+
+
 #LIST METHODS
 
 
@@ -181,3 +300,203 @@ marksB = [44,55,66]
 
 marksB.extend(marks)
 print(marksB)
+
+
+city = "pune"
+print(city[0])
+
+# 0     1    2    3
+# p     u    n    e
+#-4    -3   -2    -1
+
+# for loop 
+for char in city:
+    print(char)
+# for loop with range 
+for x in range(len(city)):
+    #print(x)
+    print(city[x])
+# while loop
+i1 = 0
+while(i1 < len(city)):
+    #print(i1)
+    print(city[i1])
+    i1 = i1 + 1
+
+# program 3
+#           0          1        2        3
+names = ["chinmay",'shirish',"sarika","poorva"]
+print(names[0])
+names[1] = "sheerish"
+print(names)
+
+city2 = "nagpur"
+#city2[1] = "y"
+city2 = 'wardha'
+
+# program 4
+str = "mumbai"
+e = len(str)
+print(e)
+
+# program 5
+city3 = "wardha"
+e2 = city3.upper()
+print(e2)
+
+city4 = "Kanpur"
+e3 = city4.lower()
+print(e3)
+
+city5 = "chandrapur"
+e4 = city5.startswith('cha')
+e5 = city5.startswith('c')
+e6 = city5.startswith('C')
+
+print(e4)
+print(e5)
+print(e6)
+
+
+city6 = "jaipur"
+e7 = city6.endswith('r')
+e8 = city6.endswith('pur')
+e9 = city6.endswith('R')
+print(e7)
+print(e8)
+print(e9)
+
+
+
+
+#STRING METHODS
+
+
+
+
+firstName = "subhuti"
+print(type(firstName))
+
+e1 = firstName.upper()
+print(e1)
+
+lastName = "kapse"
+e2 = lastName.lower()
+print(e2)
+
+middleName = "Ajay"
+e3 = middleName.capitalize()
+print(e3)
+
+# upper() , lower() , capitalize()
+
+# program 2
+
+firstName = "kamlesh"
+e4 = firstName.startswith("r")
+e5 = firstName.startswith('ra')
+print(e4)
+print(e5)
+
+e6 = firstName.endswith('l')
+e7 = firstName.endswith('Ul')
+print(e6)
+print(e7)
+
+# program 3
+firstName = " sanvi "
+print(len(firstName))
+
+# e5 = firstName.strip()
+# print(len(e5))
+
+# e6 = firstName.lstrip()
+# print(len(e6))
+
+# e7 = firstName.rstrip()
+# print(len(e7))
+
+# program 4
+str = "123213123123"
+e8 = str.isdigit()
+print(e8)
+
+#isnum()
+
+str2 = "sapeksha"
+e9 = str2.isalpha()
+print(e9)
+
+str3 = "sanu3948"
+print(str3.isalnum())
+
+
+str3 = "123"
+print(str3.isalnum())
+
+str3 = "aaaa"
+print(str3.isalnum())
+
+str3 = "aaaa #"
+print(str3.isalnum())
+
+
+#program 5
+str = "i am learning python"
+e10 = str.replace("python","js")
+print(e10)
+
+
+str2  = "Hello"
+e2 = str2.islower()
+print(e2)
+
+
+str3 = "HELLO"
+e4 = str3.isupper()
+print(e4)
+
+
+str4 = "chinmaya"
+e3 = str4.count('a')
+print(e3)
+
+str5 = "I Learn Python"
+e4 = str5.istitle()
+print(e4)
+
+str6 = "I Am Learning  Python"
+e5 = str6.swapcase()
+print(e5)
+
+#rjust()
+#ljust()
+
+# isspace()
+str7 = " "
+e8 = str7.isspace()
+print(e8)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

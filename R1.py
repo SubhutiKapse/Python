@@ -1,9 +1,41 @@
-#topics-list,loops,tuple,dictionary,sets,string
+#topics / datatypes in python-int,float,boolean,list,loops,tuple,dictionary,sets,string
 
 
 
 
+#integer
+x=5
+print(x)
+print(type(x))
 
+#float
+y=10.3
+print(y)
+print(type(y))
+
+#string
+z = "subhuti"
+print(z)
+print(type(z))
+
+#list
+q1= [11,22,33,44]
+print(q1)
+print(type(q1))
+
+#dictinoary
+a1 = {
+    "firstName":"chinmay",
+    "lastName":"deshpande"
+}
+print(a1)
+print(type(a1))
+
+
+#tuple
+f = (12,3,4,5)
+print(f)
+print(type(f))
 
 # x=2
 # print(x)

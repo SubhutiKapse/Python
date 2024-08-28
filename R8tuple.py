@@ -80,6 +80,7 @@ print(type(tupleA))
 
 
 # Does tuple stores the value by index ??
+#yes
 
 tupleB = 11,12,13
 print(type(tupleB))

@@ -252,3 +252,210 @@ print(q10)
 
 
 
+# # int 
+# # int as a parameter and int as a return type 
+# def add(x,y):
+#     return x + y
+
+# e = add(12,3)
+# print(e)
+# print(type(e))
+
+# # float 
+# # float value as a parameter and float value as return type 
+# def addB(x,y):
+#     return x + y
+# f = addB(12.4,13.4)
+# print(f)
+# print(type(f))
+
+# boolean value as a parameter and boolean value as a return type
+# boolean 
+print("hello")
+def CanDrive(age, hvV):
+    if age >= 18 and hvV:
+        return True
+    else:
+        return False
+f = CanDrive(13,True)
+print(f)
+
+# string 
+# string as a parameter and string as a return type 
+def greet(word):
+    return "hello "+ word
+g  = greet("subhuti")
+print(g)
+
+# list 
+# list a parameter and list a return type 
+
+names = ["subhuti","subhu","sani","shweta"]
+def addE(lst):
+    lst.append("sapeksha")
+    return lst
+j = addE(names)
+print(j)
+
+# dict 
+# dict as a parameter and dict as a return type 
+info = {
+    "firstName":"subhuti",
+    "lastName":"kapse",
+    "age":21,
+    "rollNo":344
+}
+
+def addEtoD(information):
+    information['language'] = "marathi"
+    information.update({"city":"banglore"})
+    return information
+h = addEtoD(info)
+print(h)
+
+# tuple
+# tuple as a parameter and tuple as a return type
+tupleA = (12,34)
+print(type(tupleA))
+def addE(tupB):
+    tupB = list(tupB)
+    tupB.append(56)
+    tupB = tuple(tupB)
+    return tupB
+l = addE(tupleA)
+print(l)
+
+# set 
+# set as a parameter and set as a return type 
+g = {11,22,33,44,55,66}
+def addV(setB):
+    setB.add(35)
+    return setB
+w = addV(g)
+print(w)
+
+
+
+# expression
+def add(x,y):
+    return x + y
+e = add(12,4)
+print(e)
+
+# lambda --- keyword
+# x , y  --- parameter 
+# x + y  --- return type 
+
+
+add = lambda x,y:x+y
+e = add(34,5)
+print(e)
+
+# program 2
+
+x = 10
+print(x)
+
+f = lambda x : x * x
+#print(f)
+f(3)
+
+
+# program 3
+# function as parameter to another 
+
+sub = lambda x,y:x-y
+def subtraction(fn,x,y):
+    # fn = lambda x,y:x-y
+    # x  = 40
+    # y = 20
+    e = fn(x,y)
+    return e
+e2 = subtraction(sub,40,20)
+print(e2)
+
+
+
+# program 4
+mul = lambda x,y:x*y
+def multiplication(fn,x,y):
+    # fn = lambda x,y:x*y
+    # x = 23
+    # y = 2
+
+    m = fn(x,y)
+    return m
+m2 = multiplication(mul,23,2)
+print(m2)
+
+
+# function as a return type 
+def division():
+    return lambda x,y:x/y
+
+e = division()
+#e  = lambda x,y:x/y
+print(e)
+print(e(12,4))
+
+
+
+# function 
+# program 1
+# def - keyword
+# add - function name 
+# x,y - parameters
+# return - keyword
+#add(12,3) - call , 12,3 ===> arguments
+# def add(x,y):
+#     return x + y
+
+# e = add(12,3)
+# print(e)
+
+
+# program 1
+# def add(x,y):
+#     return x + y
+
+# add()
+def add(x = 1,y = 3):
+    return x + y
+
+print(add())
+print(add(1,22))
+print(add(2))
+
+# positional arguments 
+def sub(x,y):
+    return x - y
+f = sub(y =3,x = 4)
+
+# *args
+from functools import reduce
+def addition(*args):
+    return reduce(lambda acc,el:acc+el,args)
+f = addition(12,7,4,5,6,7,8)
+print(f)
+
+
+def additionE(*args):
+    print(args)
+    e = list(args)
+    total = 0 
+    for x in e:
+        total = total + x
+    return total
+e = additionE(12,33,4,5,6)
+print(e)
+
+
+# program 5
+# *kwargs
+def addCity(**kwargs):
+    print(kwargs)
+    kwargs['city'] = "banglore"
+    return kwargs
+
+g = addCity(firstName = "subhuti" , lastName = "kapse", age = 21)
+print(g)

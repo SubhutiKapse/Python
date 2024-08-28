@@ -1,8 +1,9 @@
 #topics / datatypes in python-int,float,boolean,list,loops,tuple,dictionary,sets,string
 
+# int , float , string , boolean ,list , tuple , dict,set
 
-
-
+#dict - No , tuple - Yes , List - Yes , String - Yes
+#  set - No --duplicate and index
 #integer
 x=5
 print(x)

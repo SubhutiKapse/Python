@@ -215,3 +215,557 @@ print(q)
 
 w2=tupleD.index(22)
 print(w2)
+
+
+
+
+
+
+
+
+
+
+
+x=10
+print(x)
+
+x=34
+print(x)
+
+#arithmetic operation
+a=10
+b=15
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+
+#function without parameters and without returntype
+def addA():
+    print(9+9)
+
+addA()    
+addA()
+
+#function with parameters and without returntype
+def addB(x,y):
+    print(x+y)
+addB(2,4)
+addB(1,3)    
+
+#function with parameters and without returntype
+def addC(x,y):
+    return x+y
+q1=addC(2,4)
+print(q1)
+
+#conditional statement
+
+#if statement
+num=20
+if 5<=num and 11<num:
+    print("10% discount")
+if 20<=num and 14<num:
+    print("20% discount")
+if 15<=num and 11<num:
+    print("30% discount")
+
+
+
+num=20
+
+if 5<=num and 11<num:
+    print("10% discount")
+elif 20<=num and 14<num:
+    print("20% discount")
+elif 15<=num and 11<num:
+    print("30% discount")
+
+#loops
+#while and for loop
+    #with range
+    #print 0 to 9
+for x in range(10):
+        print(x)
+
+#print 1 to 6
+for x in range(1,6):
+    print(x)        
+
+
+#print -6 ti -1
+for x in range(-6,-1):
+    print(x)    
+
+#print table of 2
+    for x in range(2,21,2):
+        print(x)
+
+#table of 5
+        for x in range(5,51,5):
+            print(x)        
+
+for x in range(50,4,-5):
+    print(x)            
+
+#continue with for loop
+for x in range(1,6):
+    if x==3:
+        continue
+    print(x)
+
+#break
+for x in range(1,8):
+    if x==4:
+        continue
+    print(x)    
+
+for x in range(1,6):
+    print(x)
+    if x==3:
+      break
+
+
+#continue 
+    #break
+
+
+for x in range(1,8):
+    if x==4:
+        continue
+    print(x)    
+
+
+for x in range(1,8):
+    print(x)
+    if x==4:
+        print(x)    
+
+#while 
+        t1=1
+while (t1<=3):
+    print(t1)
+    t1=t1+1                
+
+
+y1=1
+while(y1<=5):
+    print(y1) 
+    y1=y1+1  
+
+
+#table of 2    
+t1=1
+while(t1<=20):
+    print(t1)
+    t1=t1+1
+
+#list
+    names=["subhuti","sapi","sapeksha","shilpa"]
+    print(names)        
+names[2]="mayuri"
+print(names)
+
+print(type(names))
+(print(len(names)))
+print(names[0])
+
+# for x in range(len(names)):
+#     print(names[x])
+
+for subhuti in names:
+    print(subhuti)    
+
+names=["subhuti","sapi","sapeksha","shilpa"]
+i=0
+while(i<=3):
+    print(names[i])
+    i=i+1   
+
+
+print("subhuti" in names)    
+
+names=["subhuti","sapi","sapeksha","shilpa"]
+names[0]="komal"
+print(names)
+names.append("pushpa")
+print(names)
+
+names.pop()
+print(names)
+
+names.remove("sapi")
+print(names)
+
+names.pop(0)
+print(names)
+
+listA=[11,22,33]
+listB=listA
+listB[0]=66
+print(listA)
+print(listB)
+
+
+listQ=listA.copy()
+listQ[1]=111
+print(listQ)
+print(listA)
+
+
+info={
+    "firstName":"subhuti",
+    "lastName":"kapse",
+    "age":21,
+    "rollno":9879
+}
+print(info['firstName'])
+info['firstName']="poorva"
+print(info)
+info['city']="pune"
+print(info)
+
+info.pop('age')
+print(info)
+
+for key in info.keys():
+    print(key)
+
+for val in info.values():
+    print(val)    
+
+for k,v in info.items():
+    print(k,v)    
+
+#print 0 to 9
+    for x in range(10):
+        print(x)    
+
+#print 2 to 9
+        for x in range(2,10):
+            print(x)
+
+#print 1 to 5
+# for x in range(1,6):
+#             print(x)            
+
+
+# for x in range(1,10):
+#     if x==2:
+#         break
+#         print(x)
+
+# #continue with for loop
+# for x in range(1,6):
+#     if x==2:
+#      break:
+#       print(x)        
+
+
+
+
+
+
+
+
+
+
+
+################################
+# x=10
+# print(x)
+
+# #arithmetic operation
+# a=5
+# b=3
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+# print(a%b)
+
+
+# #function without parameters and without returntype
+# def add():
+#     print(9+9)
+
+# add()
+# add()    
+# #function with parameters and without returntype
+# def sub(x,y):
+#     print(x-y)
+
+# sub(2,8)
+# sub(9,7)    
+
+# #function with parameters and with returntype
+# def addA(u,v):
+#     return u+v
+# s1=addA(7,7)
+# print(s1)
+
+# #loops
+# #for loops using range
+# #print 1 to 10
+# for x in range(11):
+#     print(x)
+# #print 10 to 1
+#     for x1 in range(10):
+#         print(x1)
+# #print table of 2
+#     for x in range(2,21,2):
+#         print(x)
+# #print table of 10
+#     for x in range(10,101,10):
+#         print(x)
+
+#  #print table of 3
+#         for x in range(3,31,3):
+#             print(x)      
+
+# #print reverse table of 3
+#         for x in range(30,0,-3):
+#             print(x)
+
+# #print reverse table of 10
+#             for x in range(100,9,-10):
+#                 print(x)
+
+
+# #break statement with for loops
+# for x in range(1,6):
+#     print(x)#1#2#
+#     if x==3:
+#      break
+
+# for x in range(1,9):
+#    if x==5:
+#     break
+# print(x)     
+
+# for x in range(1,8):
+#   print(x)
+#   if x==4:
+#     break
+  
+# for x in range(1,6):
+#   if x==4:
+#     break
+#   print(x)  
+
+# #continue with loops
+#   for x in range(1,5):
+#     if x==3:
+      
+#       continue
+# print(x)
+
+
+# #break
+# for x in range(1,5):
+#   if x==3:
+#     break
+#   print(x)
+
+#   for x in range(1,10):
+#     print(x)
+#     if x==5:
+#       break
+
+# #continue
+#     for x in range(1,8):
+      
+#       if x==6:
+#         continue
+#       print(x)
+
+
+#       for x in range(1,7) :
+        
+#         if x==4:
+#           continue   
+#         print(x)
+
+
+#  #while loops
+# q1=1
+# while(q1<=4):
+#   print(q1)
+#   q1=q1+1         
+
+# #table of 2
+#   q2=2
+#   while(q2<=20):
+#     print(q2)
+#     q2=q2+2
+
+
+# #table of 5
+# q3=5
+# while(q3<=50):
+#   print(q3)
+#   q3=q3+5        
+
+
+# #table of 5 in reverse
+#   w1=50
+# while(w1>=5):
+#  
+#   #w1=w1+5 
+
+# #   s1=2
+# #   while s1<=20:
+    
+# #     if s1==5:
+# #       break
+# #     print(s1)
+# #     s1=s1+2
+  
+# #list
+# names=["subhuti","sapeksha","shivani","shyli"]
+# print(names)
+# print(type(names))
+# print(len(names))
+
+# names[0]
+# print(names)
+# names[1]
+# print(names)
+# names[2]
+# print(names)
+# names[3]
+# print(names)
+
+# names[0]="kamla"
+# print(names)
+# names[1]="shamli"
+# print(names)
+# for x in range(len(names)):
+#  print(x)
+
+# for  item in names:
+#  print(item) 
+
+# q1=0
+# while(q1<len(names)):
+#  print(q1)
+# #  print(names[q1])
+# #  q1=q1+1 
+
+# # flowers=["rose","mogra","jasmine","tulip","lily"]
+# # print(flowers)
+# # print(type(flowers))
+# # print(len(flowers))
+# # print("lily" in flowers)
+
+# # a1=1
+# # while(a1<=5):
+# #  if a1==3:
+# #   a1=a1+1
+# #   print(a1)
+
+# #function without parameters and without returntype
+# def addA():
+#  print(2+3)
+# addA()
+# addA() 
+
+# #function with parameters and without returntype
+
+# def addB(x,y):
+#  print(x+y)
+# addB(2,4) 
+
+# #function with parameters and with returntype
+# def addC(x,y):
+#  return x+y
+# q1=addC(12,3)
+# print(q1)
+
+
+# #conditional statement
+# num=10
+# if (num<=20 and num<=30):
+#  print("10 % discount")
+# if (num<=20 and num<=30):
+#  print("20 % discount")
+# if (num<=20 and num<=30):
+#  print("30 % discount")
+
+
+#  numT=20
+# if (num<=20 and num<=30):
+#  print("10 % discount")
+# elif (num<=20 and num<=30):
+#  print("20 % discount")
+# elif (num<=20 and num<=30):
+#  print("30 % discount")
+# # else:
+# #  print("no discount")
+
+
+#int as parameter and int as returntype
+def add(x,y):
+ return x+y
+q1=add(1,3)
+print(q1)
+
+#float as parameter and float as returntype
+
+#string as parameter and string as returntype
+#boolean as parameter and boolean as returntype
+#list as parameter and list as returntype
+
+#tuple as parameter and tuple as returntype
+
+#dictionary as parameter and dictionary as returntype
+#set as parameter and set as returntype
+
+
+
+
+#instance
+#static
+#class
+
+class PersonA:
+ country="india"
+ def __init__(self,fn,ln,ag):
+  self.firstName=fn
+  self.lastName=ln
+  self.age=ag
+
+def displayName(self):
+ print(self.firstName + self.lastName)
+
+def changeCountry(cls,cn):
+ cls.country="bharat"
+
+subhuti=PersonA("subhuti","kapse",21)
+print(subhuti.firstName)
+print(subhuti.lastName)
+print(subhuti.age)
+#subhuti.displayName()
+
+
+
+class PersonB():
+ country="india"
+ def __init__(self,fn,ln,ag):
+  self.firstName=fn
+  self.lastName=ln
+  self.age=ag
+
+def displayName(self):
+ print(self.firstName + self.lastName)
+
+
+def changeCountry(cls,cn):
+ cls.country="bharatmata"
+sanvi=PersonB("sanvi","rai",22)
+
+print(subhuti.firstName)
+print(subhuti.lastName)
+print(subhuti.age)
+print(subhuti.country)
